@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Untitled</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <style>
       body {
         margin: 0;
         padding-top: 75px;
+        font-family: "Montserrat", sans-serif;
         color: white;
-        background: linear-gradient(45deg, pink, navy, pink);
+        background: linear-gradient(45deg, midnightblue, darkslategray, black);
         background-size: 400% 400%;
         animation: gradientAnimation 10s ease infinite;
       }
@@ -29,8 +31,7 @@
       }
 
       nav {
-        background: navy;
-        font-family: Arial, sans-serif;
+        background: darkslategray;
         overflow: hidden;
         position: fixed;
         top: 0;
@@ -38,30 +39,31 @@
         z-index: 1000;
       }
 
+      .website-title,
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 16px;
+        display: inline-block;
+      }
+
       .website-title {
         float: left;
         margin: 15px 20px;
-        color: white;
-        text-decoration: none;
       }
 
       nav a {
         float: right;
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
         margin-top: 15px;
-        text-decoration: none;
       }
 
       nav a:hover {
         background-color: white;
-        color: navy;
+        color: darkslategray;
       }
 
-      nav .website-title:hover {
-        background-color: navy;
+      .website-title:hover {
+        background-color: darkslategray;
         color: white;
       }
     </style>
