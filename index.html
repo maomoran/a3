@@ -8,11 +8,11 @@
       body {
         margin: 0;
         padding-top: 75px;
-        font-family: "Montserrat", sans-serif;
+        font-family: "Avenir", sans-serif;
         color: white;
-        background: linear-gradient(45deg, midnightblue, black, white);
+        background: linear-gradient(45deg, gold, darkorange, coral, darkslateblue, midnightblue, black);
         background-size: 400% 400%;
-        animation: gradientAnimation 10s ease infinite;
+        animation: gradientAnimation 15s ease infinite;
       }
 
       @keyframes gradientAnimation {
@@ -30,7 +30,7 @@
       }
 
       nav {
-        background: midnight;
+        background-color: ;
         overflow: hidden;
         position: fixed;
         top: 0;
@@ -47,6 +47,8 @@
       }
 
       .website-title {
+        text-decoration: none;
+        pointer-events: none;
         float: left;
         margin: 15px 20px;
       }
@@ -58,12 +60,35 @@
 
       nav a:hover {
         background-color: white;
-        color: #000033;
+        color: black;
       }
 
-      .website-title:hover {
-        background-color: black;
-        color: white;
+      .content-block {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .heading {
+        text-align: right;
+      }
+
+      .text-block {
+        margin-top: 10px;
+      }
+
+      .image-block {
+        margin-top: 10px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      hr {
+        margin-top: 20px;
       }
     </style>
   </head>
@@ -74,5 +99,15 @@
       <a href="#photos">Photos</a>
       <a href="#poems">Poems</a>
     </nav>
+    <div class="content-block">
+      <div class="heading">
+        <h2>Contact</h2>
+      </div>
+      <div class="text-block">
+        <mailto </div>
+          <div class="image-block">
+            <img src="img.jpg" alt="">
+          </div>
+      </div>
   </body>
 </html>
