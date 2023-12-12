@@ -8,8 +8,8 @@
       body {
         margin: 0;
         padding-top: 75px;
-      	color: white;
-        background: linear-gradient(45deg, black, navy, yellow);
+        color: white;
+        background: linear-gradient(45deg, black, navy, white);
         background-size: 400% 400%;
         animation: gradientAnimation 10s ease infinite;
       }
@@ -38,6 +38,13 @@
         z-index: 1000;
       }
       
+      .website-title {
+        float: left;
+        margin: 15px 20px;
+        color: white;
+        text-decoration: none;
+      }
+
       nav a {
         float: right;
         display: block;
@@ -46,17 +53,20 @@
         padding: 14px 16px;
         text-decoration: none;
       }
-      
+
       nav a:hover {
         background-color: white;
-        color: white
+        color: navy;
       }
+
     </style>
   </head>
   <body>
-
-<nav>
-    <a href="#photos">Photos</a>
-    </nav>
+    <nav>
+  <a href="#" class="website-title">Mica Andrea Morante</a>
+  <a href="#contact">Contact</a>
+  <a href="#photos">Photos</a>
+  <a href="#poems">Poems</a>
+</nav>
   </body>
 </html>
