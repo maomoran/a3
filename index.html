@@ -75,7 +75,6 @@
         width: 95%;
         margin: 50px auto;
         border-top: 1px solid;
-        border-bottom: 1px solid;
         overflow: hidden;
       }
 
@@ -87,9 +86,16 @@
         margin-top: 20px;
       }
 
-      .text-block {
+      .text-block-center {
         float: left;
         width: 20%;
+        margin: 10px 70px;
+      }
+
+      .text-block-right {
+        float: right;
+        font-size: 14pt;
+        width: 40%;
         margin: 10px 70px;
       }
 
@@ -114,8 +120,8 @@
         position: fixed;
         bottom: 0;
         width: 100%;
-        background-color: white;
-        color: black;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
         padding: 40px;
         text-align: center;
       }
@@ -130,13 +136,12 @@
         padding: 10px;
         margin: 5px;
         width: 200px;
-        box-sizing: border-box;
       }
 
       button {
         padding: 10px 20px;
         background-color: rgba(0, 0, 0, 0.5);
-        color: #333;
+        color: white;
         border: none;
         cursor: pointer;
       }
@@ -150,8 +155,14 @@
       <a href="#poems">Poems</a>
     </nav>
     <div class="content-block">
+      <div class="heading-block">About</div>
+      <div class="text-block-right">
+        <p>So, it all starts with a thought. And then another. And another. To turn this mess in my head into something tangible, I try to capture fleeting moments in my life and wrap my head around them. This right here is my creative corner, the place I crawl to at night after a long day. It's a sort of diary I'm throwing open to you. Come inside my head and explore my memories.</p>
+      </div>
+    </div>
+    <div class="content-block">
       <div class="heading-block">Contact</div>
-      <div class="text-block">
+      <div class="text-block-center">
         <p><a href="mailto:info@example.com?subject=Inquiry&body=Hello%20there,">maomoran@uwaterloo.ca</a></p>
         <p><a href="tel:+1234567890">(555) 555-5555</a></p>
         <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">instagram</a></p>
