@@ -6,8 +6,10 @@
     <title>Untitled</title>
     <style>
       body {
-        color: white;
-        background: linear-gradient(45deg, #3498db, #2ecc71);
+        margin: 0;
+        padding-top: 75px;
+      	color: white;
+        background: linear-gradient(45deg, black, navy, yellow);
         background-size: 400% 400%;
         animation: gradientAnimation 10s ease infinite;
       }
@@ -27,7 +29,7 @@
       }
 
       nav {
-        background: white;
+        background: navy;
         font-family: Arial, sans-serif;
         overflow: hidden;
         position: fixed;
@@ -35,10 +37,26 @@
         width: 100%;
         z-index: 1000;
       }
+      
+      nav a {
+        float: right;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      nav a:hover {
+        background-color: white;
+        color: white
+      }
     </style>
   </head>
   <body>
 
-
+<nav>
+    <a href="#photos">Photos</a>
+    </nav>
   </body>
 </html>
