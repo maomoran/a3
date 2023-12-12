@@ -79,31 +79,30 @@
         overflow: hidden;
       }
 
-      .heading {
+      .heading-block {
+        float: left;
         text-align: right;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 20px;
       }
 
       .text-block {
-        margin-top: 10px;
+        float: left;
+        width: 40%;
+        margin: 10px 100px;
       }
 
       .image-block {
-        margin-top: 10px;
+        float: left;
+        width: 30%;
       }
 
       img {
         max-width: 100%;
         height: auto;
         display: block;
-      }
-
-      hr {
-        margin-top: 20px;
-      }
-
-      h2 {
-        text-transform: uppercase;
-        font-size: 14px;
+        margin: 10px 0;
       }
     </style>
   </head>
@@ -115,17 +114,15 @@
       <a href="#poems">Poems</a>
     </nav>
     <div class="content-block">
-      <div class="heading">
-        <h2>Contact</h2>
-      </div>
+      <div class="heading-block">Contact</div>
       <div class="text-block">
         <p><a href="mailto:info@example.com?subject=Inquiry&body=Hello%20there,">maomoran@uwaterloo.ca</a></p>
         <p><a href="tel:+1234567890">(905) 251-7945</a></p>
         <p><a href="https://www.instagram.com/mi.caam/" target="_blank">instagram</a></p>
-        < </div>
-          <div class="image-block">
-            <img src="img.jpg" alt="">
-          </div>
       </div>
+      <div class="image-block">
+        <img src="img.jpg" alt="">
+      </div>
+    </div>
   </body>
 </html>
