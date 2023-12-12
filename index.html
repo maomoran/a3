@@ -105,14 +105,40 @@
         margin: 10px 0px;
       }
 
+      .newletter {
+        max-width: 600px;
+        margin: 0 auto
+      }
+
       footer {
-        position: absolute;
+        position: fixed;
         bottom: 0;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 20px;
+        background-color: white;
+        color: black;
+        padding: 40px;
         text-align: center;
+      }
+
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      input {
+        padding: 10px;
+        margin: 5px;
+        width: 200px;
+        box-sizing: border-box;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #333;
+        border: none;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -127,16 +153,23 @@
       <div class="heading-block">Contact</div>
       <div class="text-block">
         <p><a href="mailto:info@example.com?subject=Inquiry&body=Hello%20there,">maomoran@uwaterloo.ca</a></p>
-        <p><a href="tel:+1234567890">(905) 251-7945</a></p>
-        <p><a href="https://www.instagram.com/mi.caam/" target="_blank">instagram</a></p>
+        <p><a href="tel:+1234567890">(555) 555-5555</a></p>
+        <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">instagram</a></p>
       </div>
       <div class="image-block">
         <img src="IMG_3464 2.JPG" alt="me holding a camera">
       </div>
     </div>
     <footer>
-      <p>Made for GBDA228</p>
-      <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Never back down, never what?</a></p>
+      <div class="newletter">
+        <h4>Sign up for free updates</h4>
+        <form action="" method="post">
+          <input type="email" name="email" placeholder="Your email" required>
+          <button type="submit">
+            Subscribe
+          </button>
+        </form>
+      </div>
     </footer>
   </body>
 </html>
