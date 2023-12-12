@@ -10,27 +10,31 @@
         padding-top: 75px;
         font-family: "Avenir", sans-serif;
         color: white;
-        background: linear-gradient(45deg, gold, darkorange, coral, darkslateblue, midnightblue, black);
+        background: radial-gradient(circle, coral, midnightblue, black);
         background-size: 400% 400%;
-        animation: gradientAnimation 15s ease infinite;
+        animation: gradientAnimation 30s ease infinite;
       }
 
       @keyframes gradientAnimation {
-        0% {
-          background-position: 0% 50%;
+
+        0%,
+        100% {
+          background-position: 200% 200%;
         }
 
         50% {
-          background-position: 100% 50%;
-        }
-
-        100% {
-          background-position: 0% 50%;
+          background-position: 150% 150%;
         }
       }
 
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+
       nav {
-        background-color: ;
+        background-color: rgba(0, 0, 0, 0.5);
         overflow: hidden;
         position: fixed;
         top: 0;
@@ -53,9 +57,14 @@
         margin: 15px 20px;
       }
 
+
       nav a {
         float: right;
         margin-top: 15px;
+      }
+
+      a:hover {
+        color: navy
       }
 
       nav a:hover {
@@ -90,6 +99,11 @@
       hr {
         margin-top: 20px;
       }
+
+      h2 {
+        text-transform: uppercase;
+        font-size: 14px;
+      }
     </style>
   </head>
   <body>
@@ -104,7 +118,10 @@
         <h2>Contact</h2>
       </div>
       <div class="text-block">
-        <mailto </div>
+        <p><a href="mailto:info@example.com?subject=Inquiry&body=Hello%20there,">maomoran@uwaterloo.ca</a></p>
+        <p><a href="tel:+1234567890">(905) 251-7945</a></p>
+        <p><a href="https://www.instagram.com/mi.caam/" target="_blank">instagram</a></p>
+        < </div>
           <div class="image-block">
             <img src="img.jpg" alt="">
           </div>
